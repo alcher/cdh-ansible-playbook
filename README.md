@@ -9,6 +9,10 @@ This playbook builds environment Cloudera's CDH 5.7 cluster.
 ```
 CentOS 7.2(x86_64)
 ```
+- ansible-playbook
+```
+ansible-playbook 1.9.4
+```
 
 ### Sample target hosts
 ```
@@ -24,3 +28,15 @@ node2.x.y
 ## Dependency yum modules
 - Development tools
 - ntp, ntpdate
+
+## About proxy
+If mesos environment is under proxy/nat, please use proxy vars and rewrite proxy rpm's options.
+
+Also, please set the host's proxy environment:  http_proxy, https_proxy, ftp_proxy.
+
+Example. "~/.bash_profile"
+```
+export HTTP_PROXY='http://yourproxy:proxyport/'
+export HTTPS_PROXY='http://yourproxy:proxyport/'
+export FTP_PROXY='http://yourproxy:proxyport/'
+```
