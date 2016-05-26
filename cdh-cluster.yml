@@ -60,4 +60,4 @@
       copy: src="{{ src_path }}/myCluster1-template.json" dest=/var/tmp/myCluster1-template.json owner=root group=root mode=644
 
     - name: put cluster config to Cloudera Manager
-      command: curl -X POST -H "Content-Type: application/json" -d @myCluster1-template.json "http://admin:admin@{{ cm_host }}:7180/api/v12/cm/importClusterTemplate"
+      command: curl -X POST -H "Content-Type{{ ':' }} application/json" -d @myCluster1-template.json "http://admin:admin@{{ cm_host }}:7180/api/v12/cm/importClusterTemplate"
