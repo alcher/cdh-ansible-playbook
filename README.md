@@ -24,7 +24,7 @@ node2.x.y
 
 ## Install modules
 - Cloudera Manager
-- Oracle Java 
+- Oracle Java(oracle-j2sdk1.7)
 
 ## Dependency yum modules
 - Development tools
