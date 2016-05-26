@@ -440,7 +440,7 @@
       "value" : "hive"
     }, {
       "name" : "hive-hive_metastore_database_password",
-      "value" : "Mt92ZjrUS0"
+      "value" : "set hive-metastore password"
     }, {
       "name" : "hive-hive_metastore_database_port",
       "value" : "7432"
@@ -467,7 +467,7 @@
       "value" : "oozie_oozie_server"
     }, {
       "name" : "oozie-OOZIE_SERVER-BASE-oozie_database_password",
-      "value" : "A4hbnPRnPY"
+      "value" : "set oozie password"
     }, {
       "name" : "oozie-OOZIE_SERVER-BASE-oozie_database_type",
       "value" : "postgresql"
