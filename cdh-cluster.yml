@@ -44,6 +44,12 @@
       poll: 0
       ignore_errors: yes
 
+    - name: cloudera manager download
+      command: cd /var/tmp; curl -O http://archive.cloudera.com/cm5/installer/latest/cloudera-manager-installer.bin; chmod 755 cloudera-manager-installer.bin
+
+    - name: cloudera manager install
+      command: /var/tmp/cloudera-manager-installer.bin --i-agree-to-all-licenses --noprompt --noreadme
+
     - name: copy cm_rest.sh
       copy: src="{{ src_path }}/cm_rest.sh" dest=/var/tmp/cm_rest.sh owner=root group=root mode=755
 
