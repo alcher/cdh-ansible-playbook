@@ -20,6 +20,7 @@ ansible-playbook 1.9.4
 node0.x.y
 node1.x.y
 node2.x.y
+```
 
 ## Install modules
 - Cloudera Manager
